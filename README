@@ -1,0 +1,1 @@
+This is a simple sample Hibernate project to test out @OneToMany and @ManyToOne mappings in regards to a question about left joins on StackOverflow at http://stackoverflow.com/questions/6914668/hibernate-ignoring-left-join
