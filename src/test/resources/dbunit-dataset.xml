@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE dataset [
+        <!ELEMENT dataset (companies | employees | teams)*>
+        <!ELEMENT companies EMPTY>
+        <!ATTLIST companies
+                id CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        <!ELEMENT employees EMPTY>
+        <!ATTLIST employees
+                id CDATA #REQUIRED
+                firstName CDATA #REQUIRED
+                lastName CDATA #REQUIRED
+                company_id CDATA #IMPLIED
+                team_id CDATA #IMPLIED>
+        <!ELEMENT teams EMPTY>
+        <!ATTLIST teams
+                id CDATA #REQUIRED
+                name CDATA #REQUIRED>
+        ]>
+
+<dataset>
+    <companies id="1" name="Spacetek"/>
+    <companies id="2" name="No Employees company"/>
+
+    <teams id="1" name="Super team"/>
+    
+    <employees id="1" firstName="Bob" lastName="Smith" company_id="1" team_id="1"/>
+    <employees id="2" firstName="" lastName=""/>
+    <employees id="3" firstName="Jane" lastName="Doe" company_id="1"/>
+
+</dataset>
